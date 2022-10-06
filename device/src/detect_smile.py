@@ -10,7 +10,7 @@ import time
 
 
 def main():
-    print("BRUH ITS WORKING LMAOOOOOOOOOOOOO")
+    print("running.")
     # construct the argument parse and parse the arguments
     ap = argparse.ArgumentParser()
     args = vars(ap.parse_args())
@@ -22,8 +22,6 @@ def main():
     # if a video path was not supplied, grab the refrences to the webcam
     print('[INFO] starting video capture...')
     camera = cv2.VideoCapture(0)
-
-
     count = 0
 
     # keep looping

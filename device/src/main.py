@@ -10,7 +10,6 @@ import random
 
 def runGuitar():
     #command line argument to run guitar to esp8266
-    print('i am playing beautiful music')
     os.chdir('C:\Program Files\mosquitto')
     starttime = time.time()
     while True:
@@ -22,7 +21,6 @@ def runGuitar():
 
 def runDooDooSmell():
     #command line argument to run smellGeneratorto esp8266
-    print('i am sharting rn...')
     os.chdir('C:\Program Files\mosquitto')
     starttime = time.time()
     while True:
@@ -55,7 +53,6 @@ def main():
         cv2.imwrite("stupidface.jpg", img)
 
     #start the keylogger and visual detection software 
-
     p3 = Process(target=detect_smile.main)
     p1 = Process(target=runGuitar)
     p2 = Process(target=runDooDooSmell)
